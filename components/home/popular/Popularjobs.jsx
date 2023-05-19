@@ -11,9 +11,6 @@ const Popularjobs = () => {
   const router = useRouter();
  const {data, isLoading, error} = useFetch('search', {query: "React developer in Texas, USA", page: 1, num_pages: 1})
 
- console.log(data)
- console.log(isLoading)
- console.log("error",error)
   return (
     <View style={styles.container}>
       <View style={styles.header}>
